@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #5b5ef4;
+  --color-primary-hover: #4a4ddb;
+  --color-secondary: #f97316;
+  --color-base: #f8f9ff;
+  --color-surface: #ffffff;
+  --color-text-heading: #0f0f1a;
+  --color-text-body: #6b7280;
+  --color-border: #e5e7eb;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-text-body);
+  /* Subtle dot grid pattern */
+  background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-heading);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
